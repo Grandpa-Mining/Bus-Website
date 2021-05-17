@@ -1,27 +1,48 @@
 @import url(font.css);
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 body{
-    background-color: black;
-    color: aliceblue;
+    background-color: rgb(109, 76, 76);
+    color: rgb(0, 0, 0);
     font-family: 'Nanum Gothic Coding';
 }
 
-table {
-    margin-top: 3%;
+.table {
+    margin-top: 20px;
     display: grid;
-    grid-template-areas: "header" "content";
 }
 
-table th {
+.table-header {
     font-size: 24px;
-    grid-area: "header";
+    font-family: "Nanum Gothic";
+    margin: 20px 0px 10px 0px;
+}
+
+tr:nth-child(even) {
+    background: #f2d5d4;
+    color: black;
+}
+tr:nth-child(odd) {
+    background: #b89b9a;
+    color: black;
+}
+
+td {
+    text-align: right;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+td:first-child{
+    text-align: left;
 }
 
 .menu-button{
-    text-decoration: none;
-    color: rgb(48, 96, 167);
-    padding: 5px;
-    border-radius: 10px;
-    background-color: rgb(65, 64, 64);
-    margin-top: 1.5%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f2d5d4;
+    font-weight: bold;
+    color: #AD5D55;
+    border-radius: 6px;
+    margin: 15px 0px 0px 0px;
 }
