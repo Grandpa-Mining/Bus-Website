@@ -127,8 +127,24 @@ a {
 }
 
 .footer {
-    background-color: rgb(197, 197, 197);
+    background-color: #c4a19e;
+    color: white;
     padding: 5%;
+    display: grid;
+    grid-template-columns: auto 30%;
+    grid-gap: 16px;
+}
+
+.footer a {
+    background-color: #c4a19e;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.footer h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 #account {
@@ -140,4 +156,59 @@ a {
     color: #AD5D55;
     border-radius: 25px;
     margin: 47px 30px 0px 0px;
+    user-select: none;
+    cursor: pointer;
+    transition: filter 0.3s;
+}
+
+#account:hover {
+    filter: brightness(1.3);
+}
+
+#account-manager {
+    background: #f2d5d4;
+    border-radius: 6px;
+    padding: 10px;
+    width: 230px;
+    position: absolute;
+    right: 30px;
+    top: 90px;
+    display: none;
+    animation: openAccountM 0.3s ease-in forwards;
+}
+
+@keyframes openAccountM {
+    0% { opacity: 0; transform: translateY(-50px) }
+    100% {opacity: 1; transform: translateY(0px);}
+}
+
+@keyframes closeAccountM {
+    0% {opacity: 1; transform: translateY(0px);}
+    100% { opacity: 0; transform: translateY(-50px) }
+}
+
+#account-manager input, #account-manager button {
+    display: block;
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #c4a19e;
+    font-family: 'Nanum Gothic Coding';
+    padding: 6px 4px;
+    border-radius: 6px;
+    font-size: 15px;
+    border: 2px solid #AD5D55;
+    color: #ffffff;
+}
+
+#account-manager input::placeholder{
+color: #ffffff;
+}
+
+#account-manager button {
+    background: #AD5D55;
+}
+
+#account-manager button:hover {
+    background: #ce726a;
 }

@@ -1,0 +1,37 @@
+form {
+    display: grid;
+    padding: 6%;
+}
+
+form input {
+    display: block;
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #c4a19e;
+    font-family: 'Nanum Gothic Coding';
+    padding: 6px 4px;
+    border-radius: 6px;
+    font-size: 15px;
+    border: 2px solid #AD5D55;
+    color: #ffffff;
+}
+
+#name, #email, #phone {
+    grid-row: 1;
+}
+
+#subject {
+    grid-row: 2;
+    grid-column: 1/4;
+} 
+
+#text {
+    grid-row: 3;
+    grid-column: 1/4;
+    height: 100px;
+}
+
+#support-information ::placeholder {
+    color: #ffffff;
+}
