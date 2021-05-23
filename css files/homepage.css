@@ -131,7 +131,7 @@ a {
     color: white;
     padding: 5%;
     display: grid;
-    grid-template-columns: auto 30%;
+    grid-template-columns: 30% auto 30%;
     grid-gap: 16px;
     line-height: 1.4;
 }
