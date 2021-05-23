@@ -1,0 +1,21 @@
+@import url(font.css);
+
+body{
+    background-color: #c4a19e;
+    color: #fff;
+    font-family: "Nanum Gothic Coding";
+    margin-left: 30px;
+    text-decoration: none;
+
+}
+
+.logo {
+    display: inline;
+    border-radius: 200px;
+    height: 64px;
+    margin-top: 30px;
+}
+
+a {
+    color: rgb(75, 107, 134);
+}
