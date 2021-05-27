@@ -46,3 +46,7 @@ td:first-child{
     border-radius: 6px;
     margin: 15px 0px 0px 0px;
 }
+
+.prices td{
+    color: rgb(1, 136, 12);
+}
