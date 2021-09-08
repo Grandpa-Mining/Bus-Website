@@ -16,6 +16,7 @@ body{
     font-size: 24px;
     font-family: "Nanum Gothic";
     margin: 20px 0px 10px 0px;
+    color: #f2d5d4;
 }
 
 tr:nth-child(even) {
@@ -50,3 +51,4 @@ td:first-child{
 .prices td{
     color: rgb(1, 136, 12);
 }
+
